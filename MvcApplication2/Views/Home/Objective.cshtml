@@ -1,0 +1,69 @@
+﻿@{
+    <title>ViewBag.Title = "Objective";</title>
+}
+
+
+<body style="background-image:url('/pictures/title.png'); background-attachment: fixed;background-color:black; background-size:500px; background-repeat:no-repeat; background-position-x:center; ">
+
+    <div style="position:absolute; padding-bottom:210px; color:white; padding-left:10px; padding-right:10px; float:left; margin-left:20px; width:300px;  ">
+        <br /><br /><br />
+        @using (Html.BeginForm("Index", "Home"))
+        {
+            <input type="submit" value="Home" style="width:100px; height:50px; font-size:20px; color:white; background-color:gray;">
+        }
+
+        <br /> <br /> <br />
+
+        @using (Html.BeginForm("Story", "Home"))
+        {
+            <input type="submit" value="Story" style="width:100px; height:50px; font-size:20px; color:white; background-color:gray;" />
+        }
+        <br /> <br /> <br />
+        @using (Html.BeginForm("Objective", "Home"))
+        {
+            <input type="submit" value="Objective" style="width:100px; height:50px; font-size:20px; color:white; background-color:gray;" />
+        }
+        <br /> <br /> <br />
+
+        @using (Html.BeginForm("Gallery", "Home"))
+        {
+            <input type="submit" value="Gallery" style="width:100px; height:50px; font-size:20px; color:white; background-color:gray;" /><br /> <br /> <br />
+        }
+
+
+
+    </div>
+
+
+    <div style="width:80%; height:350px; background-color:white; background-position-y:bottom; padding-top:50px; margin-left:200px; margin-left:200px; opacity:0.6;
+filter:alpha(opacity=90);">
+        <div style="margin-left:10%; margin-right:10%; float:left; font-size:14pt; color:midnightblue; font-family:Verdana;">
+
+
+
+           
+                <h2>Objectives on the Voyage</h2> <br />
+
+                <br />
+                Aid Odysseus on his travel back to his homeland. <br />
+                Defeat Odysseus' enemies by solving enhancer games.<br />
+                Collect points to receive rewards. <br />
+                
+                
+                
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

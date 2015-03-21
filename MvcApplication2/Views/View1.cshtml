@@ -1,0 +1,21 @@
+﻿@{
+    <title>ViewBag.Title = "View1";</title>
+}
+
+<h2>View1</h2>
+
+@using (Html.BeginForm("Story", "Home"))
+{
+    <input type="submit" value="Story" style="width:100px; height:50px; font-size:20px; color:white; background-color:gray;" />
+}
+<br /> <br /> <br />
+@using (Html.BeginForm("Objective", "Home"))
+{
+    <input type="submit" value="Objective" style="width:100px; height:50px; font-size:20px; color:white; background-color:gray;" />
+}
+<br /> <br /> <br />
+
+@using (Html.BeginForm("Gallery", "Home"))
+{
+    <input type="submit" value="Gallery" style="width:100px; height:50px; font-size:20px; color:white; background-color:gray;" /><br /> <br /> <br />
+}

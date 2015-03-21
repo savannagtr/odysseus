@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Gallery";
+}
+
+
+<body style="background-image:url('/pictures/title.png'); background-attachment: fixed; background-color:black; background-size:500px; background-repeat:no-repeat; background-position-x:center; ">
+
+    <div style="position:absolute; padding-bottom:210px; color:white; padding-left:10px; padding-right:20px; float:left; margin-left:20px; width:300px;">
+        <br /><br /><br />
+        @using (Html.BeginForm("Index", "Home"))
+        {
+            <input type="submit" value="Home" style="width:100px; height:50px; font-size:20px; color:white; background-color:gray;">
+        }
+
+        <br /> <br /> <br />
+
+        @using (Html.BeginForm("Story", "Home"))
+        {
+            <input type="submit" value="Story" style="width:100px; height:50px; font-size:20px; color:white; background-color:gray;" />
+        }
+        <br /> <br /> <br />
+        @using (Html.BeginForm("Objective", "Home"))
+        {
+            <input type="submit" value="Objective" style="width:100px; height:50px; font-size:20px; color:white; background-color:gray;" />
+        }
+        <br /> <br /> <br />
+
+        @using (Html.BeginForm("Gallery", "Home"))
+        {
+            <input type="submit" value="Gallery" style="width:100px; height:50px; font-size:20px; color:white; background-color:gray;" /><br /> <br /> <br />
+        }
+
+
+    </div>
+
+
+    <div style="width:80%; height:1200px; background-color:white; background-position-y:bottom; padding-top:50px; margin-left:200px; margin-left:200px;">
+        <div style="margin-left:10%; margin-right:10%; float:left; font-size:12pt;">
+
+            <center><img src="~/pictures/title1.jpg" alt="SplashScreen" /> </center>
+            <br /><br />
+            <center><img src="~/pictures/cyclops.jpg" alt="Cyclops" /></center>
+            <br /> <br />
+            <center><img src="~/pictures/New Canvas.jpg" alt="Troy" /></center>
+
+        </div>
+    </div>
+</body>
